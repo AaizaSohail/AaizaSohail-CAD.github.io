@@ -1,5 +1,5 @@
-# [Project Title]
-> *One sentence. What did you analyze, build, or solve - and why does it matter?*
+# Creo CAD Design & 3D Printing
+> *A hands-on Creo CAD project where I designed an airplane model and a personalised stand featuring my name, learning through failed iterations, dimension changes and repeated design improvements before producing the final 3D-printed result.*
 
 ---
 
@@ -56,13 +56,13 @@
   (Too vague. Could describe 10,000 projects. Describes none of them.)
 -->
 
-**Context:** [The business, research, or personal situation that motivated this project.]
+**Context:** I used Creo CAD to design a detailed 3D airplane model and a personalised display stand featuring my name, which was then developed into a 3D-printed prototype.
 
-**Problem Statement:** [The specific question or challenge you were addressing.]
+**Problem Statement:** The challenge was to create accurate proportions and dimensions while learning from failed design attempts and improving the model through repeated iterations.
 
-**Approach:** [In 1–2 sentences - how did you tackle it?]
+**Approach:** I developed the designs step-by-step in Creo CAD, changing dimensions and features where needed. I also used basic statistical comparisons between design iterations to assess changes in dimensions and improve consistency before printing.
 
-**Outcome:** [What did you produce or discover?]
+**Outcome:** The final result was a refined Creo CAD airplane and personalised stand, followed by a physical 3D print. The project developed my skills in CAD modelling, dimensional analysis, basic statistics, problem-solving and iterative engineering design.
 
 ---
 
@@ -84,10 +84,10 @@
   (These can't fail - which means they can't succeed either.)
 -->
 
-- **Primary Objective:** [The main thing you set out to do]
-- **Secondary Objective 1:** [Supporting goal]
-- **Secondary Objective 2:** [Supporting goal]
-- **Secondary Objective 3:** [Remove if not applicable]
+- **Primary Objective:** Design and develop a detailed airplane model and personalised name stand in Creo CAD, taking the concept through multiple design iterations to a final printable version.
+- **Secondary Objective 1:** Evaluate and refine dimensions, proportions and features by identifying failed designs and making controlled changes between iterations.
+- **Secondary Objective 2:** Apply basic statistical comparison to review dimensional changes between iterations and support more consistent design decisions.
+- **Secondary Objective 3:** Produce and evaluate a physical 3D-printed prototype, comparing the final printed result with the original CAD design.
 
 > 💡 *Every analysis decision in this project traces back to one of these objectives.*
 
@@ -112,10 +112,10 @@
 
 | Dimension | Details |
 |-----------|---------|
-| **In Scope** | [What is included - data sources, time periods, segments] |
-| **Out of Scope** | [What you explicitly excluded - and a brief reason why] |
-| **Time Period** | [Date range of the data or the project itself] |
-| **Granularity** | [Unit of analysis - row-level, daily aggregates, per-user, etc.] |
+| **In Scope** | Designing a 3D airplane and personalised name stand in Creo CAD, refining dimensions through multiple iterations, and producing the final designs using 3D printing. |
+| **Out of Scope** |Advanced aerodynamic simulation, CFD, FEA and industrial-scale manufacturing, as the project focused on CAD development, iteration and prototyping. |
+| **Time Period** | CAD design, testing, refinement and 3D-printing stage of the project. |
+| **Granularity** |Individual CAD features, dimensions and design iterations, followed by comparison of the final CAD model with the 3D-printed prototype. |
 
 ### Tools & Technologies
 
@@ -126,51 +126,15 @@
 
 | Category | Tool(s) Used |
 |----------|-------------|
-| Data Storage | [e.g., PostgreSQL, CSV files, BigQuery, S3] |
-| Data Processing | [e.g., Python, R, SQL, Excel, dbt] |
-| Analysis | [e.g., pandas, dplyr, custom SQL queries] |
-| Visualization | [e.g., Matplotlib, Tableau, Power BI, Looker] |
-| Version Control | [e.g., Git / GitHub] |
-| Documentation | [e.g., Markdown, Notion] |
-| Other | [Any additional tools] |
+| CAD Design | Creo CAD |
+| Analysis | Dimensional measurements & statistics |
+| Manufacturing| 3D Printer |
+| Documentation | Markdown / GitHub |
+| Version Control |Git / GitHub |
 
 ---
 
-## 4. Repository Structure
-
-```
-[project-root]/
-│
-├── data/
-│   ├── raw/                  # Original, unmodified source data - never edited
-│   ├── processed/            # Cleaned and transformed data
-│   └── external/             # Reference data, lookup tables, third-party files
-│
-├── notebooks/                # Jupyter, R Markdown, or Colab notebooks
-│
-├── scripts/                  # Reusable .py, .R, or .sh processing files
-│
-├── queries/                  # SQL files (retain this folder for SQL-heavy projects)
-│   ├── exploratory/          # Ad-hoc or investigative queries
-│   ├── transformations/      # Cleaning and reshaping logic
-│   └── final/                # Production-ready or presentation queries
-│
-├── reports/                  # Final outputs: PDFs, slide decks, Word docs
-│
-├── visuals/                  # Exported charts, dashboard screenshots, ERD diagrams
-│
-├── docs/                     # Data dictionaries, schema notes, reference material
-│
-├── project_metadata.yml      # Machine-readable metadata (optional)
-└── README.md                 # You are here
-```
-
-> ⚠️ *Delete folders you didn't use. An empty folder is worse than no folder.*
-> SQL-heavy projects: keep `queries/`. Analysis-only projects: keep `notebooks/`. Both? Keep both.
-
----
-
-## 5. Data Workflow
+## 4. Data Workflow
 
 <!--
   Show how data moved through your project - from source to output.
@@ -195,158 +159,31 @@
 -->
 
 ```
-[Data Source(s)]
-      ↓
-[Ingestion / Collection Method]
-      ↓
-[Cleaning & Transformation]
-      ↓
-[Analysis / Modelling / Querying]
-      ↓
-[Output / Visualisation / Reporting]
+[Creo CAD Model]
+       ↓
+[Record Key Dimensions]
+       ↓
+[Modify & Iterate Design]
+       ↓
+[Compare Measurements]
+       ↓
+[3D Print Prototype]
+       ↓
+[Compare CAD vs Physical Model]
 ```
 
-1. **Source:** [Where did the data come from? Format, size, access method.]
-2. **Ingestion:** [How was it brought in?]
-3. **Cleaning:** [What issues did you find and fix?]
-4. **Transformation:** [What new fields, aggregations, or structures did you create?]
-5. **Analysis:** [What methods - statistical, visual, query-based, model-based?]
-6. **Output:** [What form do the results take?]
+1. **Source:** Dimensions and geometry were taken directly from the Creo CAD airplane and personalised stand.
+2. **Ingestion:** Key measurements were recorded from each design iteration for comparison.
+3. **Cleaning:** Incorrect or inconsistent dimensions were identified and corrected during the CAD refinement process.
+4. **Transformation:** Dimensions were organised by model feature and iteration, with changes calculated using absolute and percentage differences.
+5. **Analysis:** Descriptive statistics such as mean, minimum, maximum, range and percentage change were used where multiple measurements were available.
+6. **Output:** The final Creo CAD models were converted into 3D-printed prototypes, allowing the digital dimensions and physical result to be compared.
 
 ---
 
-## 6. Data Model & Schema
 
-<!--
-  Define your fields so that someone reading your analysis can follow along
-  without digging through your code.
 
-  WHAT GOOD LOOKS LIKE (one row example):
-  | transaction_id | string | Unique identifier per sales transaction | TXN-00482 |
-  | return_flag    | boolean | Whether the transaction included a return | TRUE |
-  | region_code    | string | Two-letter identifier for store region | "NE" |
-
-  WHAT TO AVOID:
-  ❌ Skipping this section because "the field names are self-explanatory."
-     They're not. Not to a reviewer. Not to you in six months.
-
-  📌 FOR SQL PROJECTS: If you have multiple tables, create one block per table.
-     Describe join keys and relationships here. Your ERD (Section 7) will
-     visualise what this section describes in text.
-
-  📌 FOR NON-SQL PROJECTS: Describe the shape of your dataset informally
-     if a formal schema doesn't apply. Even one paragraph is more helpful than nothing.
--->
-
-### Dataset / Table: `[name]`
-
-| Field Name | Data Type | Description | Example Value |
-|------------|-----------|-------------|---------------|
-| `[field_1]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_2]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-| `[field_3]` | [string / int / date / float / boolean] | [What this field represents] | [Non-sensitive example] |
-
-> **Row count (approx.):** [X rows]
-> **Date range:** [Start] – [End]
-> **Key join / relationship:** [e.g., `orders.customer_id` → `customers.id`]
-
-*Add additional table blocks as needed for multi-table projects.*
-
----
-
-## 7. ERD - Entity Relationship Diagram
-### *(Primarily for SQL Projects - remove this section if not applicable)*
-
-<!--
-  An ERD shows how your tables connect to each other visually.
-  It is the fastest way for a reviewer to understand the data structure
-  of a SQL project without reading every query.
-
-  HOW TO INCLUDE YOUR ERD:
-  Option A - Image embed (most common):
-    Export your ERD from dbdiagram.io, DBeaver, Lucidchart, or similar.
-    Save to /visuals/erd.png and reference it below.
-
-  Option B - dbdiagram.io code block (version-controllable):
-    Paste your schema definition code directly in the fenced block below.
-    Anyone can paste it into dbdiagram.io to regenerate the visual.
-
-  Option C - Mermaid diagram (renders natively in GitHub):
-    Use the mermaid code block syntax below.
-    GitHub will render this as a diagram automatically.
-
-  PICK ONE. Don't use all three. Delete the options you don't use.
--->
-
-### Option A - Embedded Image
-![ERD Diagram](visuals/erd.png)
-*[Brief caption: e.g., "Three-table schema - orders, customers, and products joined on shared IDs."]*
-
----
-
-### Option B - dbdiagram.io Schema Definition
-```
-Table orders {
-  order_id    int     [pk]
-  customer_id int     [ref: > customers.customer_id]
-  product_id  int     [ref: > products.product_id]
-  order_date  date
-  amount      float
-}
-
-Table customers {
-  customer_id int  [pk]
-  region_code string
-  signup_date date
-}
-
-Table products {
-  product_id   int    [pk]
-  category     string
-  unit_price   float
-}
-```
-*Paste this into [dbdiagram.io](https://dbdiagram.io) to view the visual.*
-
----
-
-### Option C - Mermaid Diagram *(renders on GitHub)*
-```mermaid
-erDiagram
-    ORDERS {
-        int order_id PK
-        int customer_id FK
-        int product_id FK
-        date order_date
-        float amount
-    }
-    CUSTOMERS {
-        int customer_id PK
-        string region_code
-        date signup_date
-    }
-    PRODUCTS {
-        int product_id PK
-        string category
-        float unit_price
-    }
-    ORDERS ||--o{ CUSTOMERS : "placed by"
-    ORDERS ||--o{ PRODUCTS : "contains"
-```
-
----
-
-**Table Relationships Summary:**
-
-| Relationship | Join Key | Type |
-|-------------|----------|------|
-| `orders` → `customers` | `customer_id` | Many-to-One |
-| `orders` → `products` | `product_id` | Many-to-One |
-| [Add rows as needed] | | |
-
----
-
-## 8. Analysis & Metrics
+## 5. Analysis & Metrics
 
 <!--
   Explain what you measured and how - before you share what you found.
@@ -367,28 +204,55 @@ erDiagram
 
 ### Analytical Approach
 
-[Describe how you approached the analysis. Were you exploring patterns? Testing a hypothesis? Building and validating a pipeline? Be honest about your method - exploratory work is valid, just call it that.]
+The project used an iterative CAD and manufacturing analysis. Key dimensions were measured in Creo and SolidWorks, then compared across design iterations and against measurements taken from the 3D-printed prototypes. This allowed design changes and manufacturing accuracy to be evaluated using numerical evidence.
 
 ### Key Metrics Defined
 
 | Metric | Plain-Language Definition | Why It Matters |
 |--------|--------------------------|----------------|
-| `[Metric 1]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 2]` | [What it measures, in one sentence] | [What decision or question it answers] |
-| `[Metric 3]` | [What it measures, in one sentence] | [What decision or question it answers] |
+| CAD Dimension | Intended measurement from the digital model. | Defines the target size. |
+| Physical Dimension | Measurement taken from the 3D-printed model. | Shows the actual manufactured size. |
+| Absolute Difference | Difference between CAD and physical measurements. | Shows the dimensional error in mm.|
+| Percentage Difference | Difference expressed as a percentage of the CAD dimension. | Makes accuracy easier to compare. |
+| Percentage Change | Change between two design iterations.| Shows how much the design was modified. |
+| Mean | Average of multiple measurements. | Shows the typical measurement. |
+| Range | Maximum − minimum measurement.| Shows measurement variation. |
+| Standard Deviation | Measures spread around the mean. | Indicates consistency when enough measurements exist. |
+
+### Calculations
+
+- Absolute Change
+New Dimension − Previous Dimension
+
+- Percentage Change
+((New − Previous) / Previous) × 100
+
+- CAD-to-Print Difference
+Physical Measurement − CAD Measurement
+
+- CAD-to-Print Percentage Difference
+((Physical − CAD) / CAD) × 100
+
+- Mean
+Σ Measurements / Number of Measurements
+
+- Range
+Maximum − Minimum
 
 ### Methods Used
 
-- [e.g., Descriptive statistics - distribution, central tendency, outlier detection]
-- [e.g., Trend analysis across [time period]]
-- [e.g., Segmentation / group comparison by [dimension]]
-- [e.g., Correlation analysis between [variable A] and [variable B]]
-- [e.g., SQL window functions for [specific aggregation]]
-- [e.g., Custom aggregation or transformation logic in [tool]]
+- Dimensional measurement
+- Design iteration comparison
+- Descriptive statistics
+- CAD-to-print comparison
+- Percentage difference analysis
+- Visual inspection of prototypes
+- Iterative CAD refinement
+- 3D-print validation
 
 ---
 
-## 9. Key Insights
+## 6. Key Insights
 
 <!--
   Findings + implications. Not just what happened - what it means.
@@ -408,50 +272,19 @@ erDiagram
   Aim for 3–6 insights. Quality over quantity.
 -->
 
-**Insight 1: [Short descriptive headline]**
-[What you found + what it suggests. One short paragraph.]
+**Insight 1: Iterative CAD Refinement Improved the Final Design**
+Multiple CAD iterations allowed dimensions and geometry to be refined before manufacturing. This reduced the risk of producing a final prototype with obvious design or proportion issues.
 
-**Insight 2: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 2: Digital Design and Physical Manufacturing Are Not Identical**
+Comparing the Creo CAD dimensions with the 3D-printed prototype showed that physical manufacturing can introduce small dimensional differences. This demonstrates the importance of validating CAD designs through physical prototypes rather than relying solely on the digital model.
 
-**Insight 3: [Short descriptive headline]**
-[What you found + what it suggests.]
+**Insight 3: Dimensional Measurements Supported Design Decisions**
+Recording dimensions such as overall length, width, height, wing size and stand dimensions provided measurable evidence for design changes. Percentage change and CAD-to-print difference calculations made these changes easier to evaluate.
 
-**Insight 4 (if applicable): [Short descriptive headline]**
-[What you found + what it suggests.]
 
 ---
 
-## 10. Recommendations
-
-<!--
-  Action-oriented. Addressed to a real audience.
-  Tied explicitly to the insight that supports each one.
-
-  WHAT GOOD LOOKS LIKE:
-  Priority: High
-  Recommendation: "Conduct a fulfilment audit for home goods deliveries
-                   in Region A - specifically investigating whether returns
-                   correlate with a particular warehouse, carrier, or SKU batch."
-  Based On: Insight 1 - return rate anomaly in Region A
-  Owner: Operations / Supply Chain team
-
-  WHAT TO AVOID:
-  ❌ "Improve the return rate."
-     (Not actionable. Doesn't say who, how, or where to start.)
-  ❌ "Further analysis is needed."
-     (This is a placeholder, not a recommendation.)
--->
-
-| Priority | Recommendation | Based On | Suggested Owner |
-|----------|---------------|----------|-----------------|
-| High | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Medium | [Specific, actionable step] | [Insight it comes from] | [Who should act] |
-| Low | [Exploratory or longer-term suggestion] | [Insight it comes from] | [Who should act] |
-
----
-
-## 11. Assumptions & Limitations
+## 7. Assumptions & Limitations
 
 <!--
   WHAT GOOD LOOKS LIKE:
@@ -469,21 +302,22 @@ erDiagram
 -->
 
 ### Assumptions
-- [What did you treat as true without being able to verify?]
-- [What simplifications did you make for scope or feasibility?]
-- [What domain rules or definitions did you accept as given?]
+- CAD dimensions were assumed to represent the intended final design dimensions.
+- Measurements taken from the physical prototypes were assumed to be sufficiently accurate for project-level comparison.
+- The 3D printer was assumed to be operating correctly and within its normal manufacturing capabilities.
+- Design decisions were based primarily on dimensional accuracy, appearance, fit and printability rather than full industrial engineering validation.
 
 ### Limitations
-- [What gaps exist in the data?]
-- [What analysis was out of scope but could affect interpretation?]
-- [What would a more rigorous version of this project include?]
-- [Are there known biases in the data source or collection method?]
+- The project did not include FEA, CFD or advanced aerodynamic simulation.
+- The number of physical measurements may be limited, reducing the reliability of statistical measures such as standard deviation.
+- 3D-printing variables such as layer height, material behaviour, printer calibration and shrinkage can affect physical dimensions.
+- CAD-to-print comparisons were limited to the features that could be practically measured.
+- The project was developed as a prototype rather than an industrial manufacturing study, so the results should not be treated as full production tolerancing data.
 
-> *The goal here is pre-emptive Q&A. What would a thoughtful skeptic push back on? Document the answer here, before they ask.*
-
+> The project demonstrates the CAD-to-prototype workflow effectively, but a more rigorous engineering validation would require controlled manufacturing conditions, larger measurement samples and formal tolerance, material, stress and performance testing.
 ---
 
-## 12. Future Enhancements
+## 8. Future Enhancements
 
 <!--
   WHAT GOOD LOOKS LIKE:
@@ -498,10 +332,17 @@ erDiagram
   ❌ Listing aspirational features that don't follow logically from the work.
 -->
 
-- [ ] [Enhancement 1 - specific and traceable to a real gap in this project]
-- [ ] [Enhancement 2]
-- [ ] [Enhancement 3]
-- [ ] [Enhancement 4]
+Add tolerance analysis — define acceptable manufacturing tolerances for important CAD features and compare printed results against them.
+
+Improve prototype validation — investigate the effect of print settings, material and layer height on dimensional accuracy.
+
+Expand engineering analysis — introduce FEA for structural components and CFD/aerodynamic analysis for the airplane design where appropriate.
+
+Develop the opposed-piston engine further — add more detailed moving components and investigate the mechanical motion of the assembly.
+
+Increase dimensional testing — take repeated measurements from multiple printed prototypes to improve statistical reliability.
+
+Automate measurement analysis — use a spreadsheet or Python workflow to automatically calculate mean, range, standard deviation and CAD-to-print percentage differences.
 
 ---
 
