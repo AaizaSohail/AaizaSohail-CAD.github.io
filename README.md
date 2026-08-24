@@ -3,35 +3,16 @@
 
 ---
 
-## ⚙️ Project Type Flags
-> *Check what applies. This helps reviewers and collaborators understand the nature of the work at a glance. Delete this block before publishing.*
-
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] SQL Analysis / Querying
-- [ ] Dashboard / Data Visualization
-- [ ] Data Pipeline / ETL
-- [ ] Predictive Modelling / Machine Learning
-- [ ] Data Cleaning / Wrangling
-- [ ] End-to-End (multiple of the above)
-- [ ] Other: ___________
-
----
-
 ## Table of Contents
 1. [Project Overview](#1-project-overview)
 2. [Objectives](#2-objectives)
 3. [Project Scope & Tools](#3-project-scope--tools)
-4. [Repository Structure](#4-repository-structure)
-5. [Data Workflow](#5-data-workflow)
-6. [Data Model & Schema](#6-data-model--schema)
-7. [ERD - Entity Relationship Diagram](#7-erd--entity-relationship-diagram) *(SQL projects)*
-8. [Analysis & Metrics](#8-analysis--metrics)
-9. [Key Insights](#9-key-insights)
-10. [Recommendations](#10-recommendations)
-11. [Assumptions & Limitations](#11-assumptions--limitations)
-12. [Future Enhancements](#12-future-enhancements)
-13. [Deliverables](#13-deliverables)
-14. [Author](#14-author)
+4. [Data Workflow](#5-data-workflow)
+5. [Analysis & Metrics](#8-analysis--metrics)
+6. [Key Insights](#9-key-insights)
+7. [Assumptions & Limitations](#11-assumptions--limitations)
+8. [Future Enhancements](#12-future-enhancements)
+9. [Author](#14-author)
 
 ---
 
@@ -346,34 +327,13 @@ Automate measurement analysis — use a spreadsheet or Python workflow to automa
 
 ---
 
-## 13. Deliverables
-
-| Deliverable | Description | Location |
-|-------------|-------------|----------|
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-| [Name] | [What it contains] | [`/path/to/file`] |
-
----
-
 ## 14. Author
 
-**[Your Name]**
-[Your role or title - current or target]
+**Aaiza Sohail**
+Aerospace Engineering Student
 
-- 🔗 [LinkedIn URL]
-- 💼 [Portfolio or GitHub profile URL]
-- 📧 [Email - optional]
+- 🔗 www.linkedin.com/in/aaiza-sohail07
+- 📧 as1780@student.le.ac.uk
 
 ---
 
-*Last updated: [Month YYYY]*
-*If this template helped you, consider starring the repository.*
-
-MIT License - use this however you want.
-
-## Credits
-
-Created by **Issy BI**
-
-If this helped you, consider starring the repo or sharing it with someone building their data portfolio.
